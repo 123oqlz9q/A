@@ -58,7 +58,7 @@ async def iq(iqthon):
     if iqthon.fwd_from:
         return
     kkno = iqthon.pattern_match.group(1)
-    donttag = "@whisperBot"
+    donttag = "@ocbot"
     if iqthon.reply_to_msg_id:
         await iqthon.get_reply_message()
     l5 = await bot.inline_query(donttag, kkno)
@@ -245,7 +245,7 @@ async def _(iqthon):
     if not reply_message.text:
         await edit_or_reply(iqthon, "**♛ ⦙  الرد على الرابط.**")
         return
-    chat = "@fs0bot"
+    chat = "@hsshhdbot"
     iqevent = await edit_or_reply(iqthon, "**♛ ⦙  جاري تحميل الرابط**")
     async with iqthon.client.conversation(chat) as conv:
         try:
@@ -254,7 +254,7 @@ async def _(iqthon):
             response = await response
             await iqthon.client.send_read_acknowledge(conv.chat_id)
         except YouBlockedUserError:
-            await iqevent.edit("**♛ ⦙  فك الحظر من البوت : @fs0bot**")
+            await iqevent.edit("**♛ ⦙  فك الحظر من البوت : @hsshhdbot**")
             return
         if response.text.startswith("؟"):
             await iqevent.edit("?")
@@ -267,18 +267,18 @@ async def _(event):
     reply_to_id = await reply_id(event)
     if event.reply_to_msg_id:
         reply_to_id = await event.get_reply_message()
-    chat = "@i0zbot"
+    chat = "@DDEOUbot"
     catevent = await edit_or_reply(event, "**جـارِ الزغـرفـه 💞🧸...**")
     async with event.client.conversation(chat) as conv:
         try:
             response = conv.wait_event(
-                events.NewMessage(incoming=True, from_users=1229877081)
+                events.NewMessage(incoming=True, from_users=668571162)
             )
             await event.client.send_message(chat, "{}".format(input_str))
             response = await response
             await event.client.send_read_acknowledge(conv.chat_id)
         except YouBlockedUserError:
-            await catevent.edit("** تحـقق من انـك لم تقـم بحظر البوت @i0zbot .. ثم اعـد استخدام الامـر ... ♥️**")
+            await catevent.edit("** تحـقق من انـك لم تقـم بحظر البوت @DDEOUbot .. ثم اعـد استخدام الامـر ... ♥️**")
             return
         if response.text.startswith("رجاء قم بالرد على الكلمه التي تريد زخرفتها "):
             await catevent.edit("رجاء قم بالرد على الكلمه التي تريد زخرفتها")
@@ -291,18 +291,18 @@ async def _(event):
     reply_to_id = await reply_id(event)
     if event.reply_to_msg_id:
         reply_to_id = await event.get_reply_message()
-    chat = "@zagtelethonbot"
+    chat = "@DDEOUbot"
     catevent = await edit_or_reply(event, "**جـارِ الزغـرفـه 💞🧸...**")
     async with event.client.conversation(chat) as conv:
         try:
             response = conv.wait_event(
-                events.NewMessage(incoming=True, from_users=1943073737)
+                events.NewMessage(incoming=True, from_users=668571162)
             )
             await event.client.send_message(chat, "{}".format(input_str))
             response = await response
             await event.client.send_read_acknowledge(conv.chat_id)
         except YouBlockedUserError:
-            await catevent.edit("** تحـقق من انـك لم تقـم بحظر البوت @zagtelethonbot .. ثم اعـد استخدام الامـر ... ♥️**")
+            await catevent.edit("** تحـقق من انـك لم تقـم بحظر البوت @DDEOUbot .. ثم اعـد استخدام الامـر ... ♥️**")
             return
         if response.text.startswith("رجاء قم بالرد على الكلمه التي تريد زخرفتها "):
             await catevent.edit("رجاء قم بالرد على الكلمه التي تريد زخرفتها")
@@ -311,7 +311,7 @@ async def _(event):
             await event.client.send_message(event.chat_id, response.message)
 @iqthon.on(admin_cmd(pattern="انستا (.*)"))
 async def iq(iqthoninsta):
-    chat = "@instasavegrambot"
+    chat = "@hsshhdbot"
     link = iqthoninsta.pattern_match.group(1)
     if "www.instagram.com" not in link:
         await edit_or_reply(iqthoninsta, "يجب كتابة رابط")
@@ -327,7 +327,7 @@ async def iq(iqthoninsta):
             details = await knov.get_response()
             await iqthoninsta.client.send_read_acknowledge(knov.chat_id)
         except YouBlockedUserError:
-            await iqevent.edit("بفتح الحظر  @instasavegrambot")
+            await iqevent.edit("بفتح الحظر  @hsshhdbot")
             return
         await iqevent.delete()
         l5 = await iqthoninsta.client.send_file(iqthoninsta.chat_id, video)
