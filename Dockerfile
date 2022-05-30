@@ -1,7 +1,7 @@
-FROM telethonArab/telethonAr:slim-buster
+FROM 123oqlz9q/A:slim-buster
 
 #clonning repo 
-RUN git clone https://github.com/telethonArab/telethonAr.git /root/iqthon
+RUN git clone https://github.com/123oqlz9q/A.git /root/iqthon
 #working directory 
 WORKDIR /root/iqthon
 
