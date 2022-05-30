@@ -46,7 +46,7 @@ async def load_plugins(folder):
 async def startupmessage():
     try:
         if BOTLOG:
-            Config.CATUBLOGO = await iqthon.tgbot.send_file(BOTLOG_CHATID, "https://telegra.ph/file/e7b3ea8dc56ac781d756c.mp4", caption="♛ ⦙ تـمّ  اعـادة تشـغيل\n تليثـون العـرب ✓  :  [ 7.6 ] .\n\n♛ ⦙ للحصول على اوامر السورس\n أرسـل : (  `.اوامري`  ) \n\n♛ ⦙ لمـعرفة كيفية تغير بعض كلايش\n او صور السـورس  أرسـل  :\n (  `.مساعده`  )\n\n♛ ⦙ القناة الرسمية تليثون العرب : @IQTHON\n♛ ⦙ فارات سورس تليثون  :@TEAMTELETHON \n♛ ⦙ كلايش تليثون :  @FGFFG\n ♛ ⦙التحديثات والاضافات :  @M4_STORY\n",                buttons=[(Button.url("مطور تليثون الرسمي", "https://t.me/lll5l"),)],            )
+            Config.CATUBLOGO = await iqthon.tgbot.send_file(BOTLOG_CHATID, "https://telegra.ph/file/876adbae077148af2672b.jpg", caption="🇮🇶 ⦙ تم اعادة التشغيل ✓\n السورس الخاص بك  :  [ 7.6 ] .\n\n🇮🇶 ⦙ للحصول على اوامر السورس\n أرسل : (  `.الاوامر`  )",                buttons=[(Button.url("المطور", "tg://settings"),)],            )
     except Exception as e:
         LOGS.error(e)
         return None
