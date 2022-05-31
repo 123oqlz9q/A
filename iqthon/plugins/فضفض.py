@@ -43,7 +43,7 @@ async def _(event):
     await cat.delete()
     ms = (end - start).microseconds / 1000
     if PING_PIC:
-        caption = f"<b><i>{JM_TXT}<i><b>\n<code>ʙᴇᴏ︙{mention}"
+        caption = f"<b><i>{JM_TXT}<i><b>\n<code>ʙᴇᴏ︙ @fhdel"
         await event.client.send_file(
             event.chat_id,
             PING_PIC,
