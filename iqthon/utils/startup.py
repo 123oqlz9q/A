@@ -121,7 +121,7 @@ async def verifyLoggerGroup():
     else:
         descript = "شوف حبي، هذا الكروب يحفظ الرسائل الي تجيك بكيفك اذا تريد تحذفه لو لا"
         iqphoto2 = await iqthon.upload_file(file="SQL/extras/iqthon2.jpg")
-        _, groupid = await create_supergroup(            "تخزين الخاص", iqthon, Config.TG_BOT_USERNAME, descript    , iqphoto2  )
+        _, groupid = await create_supergroup(            "كروب التخزين الخاص", iqthon, Config.TG_BOT_USERNAME, descript    , iqphoto2  )
         addgvar("PM_LOGGER_GROUP_ID", groupid)
         print("done create group. PRIVATE_GROUP_BOT_API_ID .")
         flag = True
